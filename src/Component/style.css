@@ -1,0 +1,147 @@
+/* Original CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+nav {
+    background-color: #F55A5A;
+    height: 55px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav h1 {
+    font-size: medium;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.nav-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cards-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    width: 600px; /* Adjust width as needed */
+    background-color: #fff; /* White background */
+    margin-bottom: 20px; /* Space between cards */
+}
+
+.place-image {
+    width: 200px; /* Fixed width for the image */
+    height: 220px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the specified area */
+    border-radius: 8px;
+    margin-right: 20px; /* Space between image and content */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.loc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.location-icon {
+    width: 17px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.loc span {
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.loc a {
+    color: #918E9B;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.loc a:hover {
+    text-decoration: underline;
+}
+
+.card h1 {
+    font-size: 1.5em;
+    margin: 10px 0; /* Adjust margin as needed */
+}
+
+.date {
+    font-size: 0.9em;
+    color: black;
+    font-weight: bold;
+    margin: 0 0 10px 0; /* Adjust margin as needed */
+    letter-spacing: 0.05em;
+
+}
+
+.description {
+    font-size: 0.9em;
+    color: #555;
+    letter-spacing: 0.05em;
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .place-image {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+.line {
+    height: 1px;
+    width: 80%;
+    background-color: #F5F5F5;
+    margin: 0 auto; /* Center the line horizontally */
+}
